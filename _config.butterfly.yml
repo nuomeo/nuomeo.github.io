@@ -40,18 +40,18 @@ social:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: https://s2.loli.net/2024/03/15/nLbkjzmTWPZNrD9.jpg
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: https://s2.loli.net/2024/03/15/MIATbBgvRqK58xf.jpg
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://s2.loli.net/2024/02/29/hG4jXzZ5QbPH2nW.jpg
+index_img: https://s2.loli.net/2024/03/15/XEw1WFc7jAtg3V9.jpg
 
 # If the banner of page not setting, it will show the top_img
 default_top_img:
