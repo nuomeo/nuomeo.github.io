@@ -2,6 +2,13 @@
 # see https://butterfly.js.org/posts/4aa8abbe/##導航欄設置-Navigation-bar-settings
 # --------------------------------------
 
+inject:
+  head:
+   - <link rel="stylesheet" href="/css/custom.css">
+inject:
+    bottom: #自定义js文件
+  - <script src="/js/custom.js"></script>
+
 nav:
   logo: # image
   display_title: true
