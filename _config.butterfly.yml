@@ -2,13 +2,6 @@
 # see https://butterfly.js.org/posts/4aa8abbe/##導航欄設置-Navigation-bar-settings
 # --------------------------------------
 
-inject:
-  head:
-   - <link rel="stylesheet" href="/css/custom.css">
-inject:
-    bottom: #自定义js文件
-  - <script src="/js/custom.js"></script>
-
 nav:
   logo: # image
   display_title: true
@@ -61,7 +54,7 @@ disable_top_img: false
 index_img: https://s2.loli.net/2024/03/15/XEw1WFc7jAtg3V9.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: https://s2.loli.net/2024/02/29/hG4jXzZ5QbPH2nW.jpg
 
 # The banner image of archive page
 archive_img:
@@ -373,11 +366,11 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   # Preload the search data when the page loads.
   preload: false
   # Show top n results per article, show all results by setting to -1
-  top_n_per_article: 1
+  top_n_per_article: 2
   # Unescape html strings to the readable one.
   unescape: false
   CDN:
@@ -613,17 +606,17 @@ site_verification:
 # Notice: color value must in double quotes like "#000" or may cause error!
 
 # theme_color:
-  enable: true
-  main: "#49B1F5"
-  paginator: "#FFCCE6"
-  button_hover: "#FF8F91"
-  text_selection: "#FCA4D4"
-  link_color: "#49B1F5"
-  meta_color: "#858585"
-  hr_color: "#A4D8FA"
-  code_foreground: "#FF8F91"
-  code_background: "rgba(27, 31, 35, .05)"
-  toc_color: "#FFCCE6"
+#  enable: true
+#  main: "#49B1F5"
+#  paginator: "#FFCCE6"
+#  button_hover: "#FF8F91"
+#  text_selection: "#FCA4D4"
+#  link_color: "#49B1F5"
+#  meta_color: "#858585"
+#  hr_color: "#A4D8FA"
+#  code_foreground: "#FF8F91"
+#  code_background: "rgba(27, 31, 35, .05)"
+#  toc_color: "#FFCCE6"
 #   blockquote_padding_color: "#49b1f5"
 #   blockquote_background_color: "#49b1f5"
 #   scrollbar_color: "#49b1f5"
@@ -649,10 +642,10 @@ text_align_justify: false
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
+background: "#f6eff6d9"
 
 # Footer Background
-footer_bg: true
+footer_bg: false
 
 # Add mask to header or footer (为 header 或 footer 添加黑色半透遮罩)
 mask:
@@ -694,9 +687,9 @@ canvas_fluttering_ribbon:
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: true
+  enable: false
   color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
-  opacity: 0.7 # the opacity of line (0~1), default: 0.5.
+  opacity: 0.6 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
   mobile: false
@@ -783,7 +776,7 @@ preloader:
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
-  source: 1
+  source: 5
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
 
@@ -923,9 +916,9 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/css/custom.css">
   bottom:
-    # - <script src="xxxx"></script>
+    - <script src="/js/custom.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
