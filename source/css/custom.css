@@ -1,0 +1,204 @@
+#web_bg {
+  background: rgba(246, 239, 246);
+}
+[data-theme=dark]
+#web_bg {
+	background: rgb(4, 4, 4);
+}
+
+#footer {
+    background: transparent !important; /*全透明，已选用*/
+}
+
+/* 半透明以及透明色，未选用，
+#footer {
+    background: rgba(255,255,255,.15);
+    color: #000;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    backdrop-filter: saturate(100%) blur(5px)
+}
+#footer::before {
+    background: rgba(255,255,255,.15)
+}
+*/
+#footer #footer-wrap {
+    color: var(--font-color);
+}
+
+#footer #footer-wrap a {
+    color: var(--font-color);
+}
+   
+/*波浪特效*/
+.main-hero-waves-area {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 5;
+    bottom: -11px /*特效显示位置调整，正/负值：以中心点 上移/下移，一般改数值即可*/
+}
+
+.waves-area .waves-svg {
+    width: 100%;
+    height: 5rem
+}
+
+.waves-area .parallax>use {
+    -webkit-animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite
+}
+
+.waves-area .parallax>use:first-child {
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+    fill: #F6EFF6b3
+}
+
+.waves-area .parallax>use:nth-child(2) {
+    -webkit-animation-delay: -3s;
+    animation-delay: -3s;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    fill: #F6EFF680
+}
+
+.waves-area .parallax>use:nth-child(3) {
+    -webkit-animation-delay: -4s;
+    animation-delay: -4s;
+    -webkit-animation-duration: 13s;
+    animation-duration: 13s;
+    fill: #F6EFF64d
+}
+
+.waves-area .parallax>use:nth-child(4) {
+    -webkit-animation-delay: -5s;
+    animation-delay: -5s;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    fill: #F6EFF6
+}
+
+@-webkit-keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0)
+    }
+
+    to {
+        transform: translate3d(85px, 0, 0)
+    }
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0)
+    }
+
+    to {
+        transform: translate3d(85px, 0, 0)
+    }
+}
+
+/*向下按钮和大banner社交图标防被遮挡隐藏*/
+#page-header #scroll-down .scroll-down-effects{
+	z-index: 10;
+}
+#page-header #site_social_icons{
+	display: flow-root;
+}
+
+[data-theme=dark]
+.waves-area .parallax>use:first-child {
+    fill: #0f172ab3
+}
+[data-theme=dark]
+.waves-area .parallax>use:nth-child(2) {
+    fill: #0f172a80
+}
+[data-theme=dark]
+.waves-area .parallax>use:nth-child(3) {
+    fill: #0f172a4d
+}
+[data-theme=dark]
+.waves-area .parallax>use:nth-child(4) {
+    fill: #070b14
+}
+
+/******************************************************/
+/*顶部栏*/
+#page-header.nav-fixed #nav{
+	background: rgba(246, 239, 246, 0.61) !important;
+	backdrop-filter: blur(8px) !important;
+}
+[data-theme=dark]
+#page-header.nav-fixed #nav{
+	background: rgba(79, 76, 79, 0.35) !important;
+	backdrop-filter: blur(8px) !important;
+}
+
+#nav .show{
+	background: rgba(246, 239, 246, 0.61) !important;
+	backdrop-filter: blur(8px) !important;
+}
+[data-theme=dark]
+#nav .show{
+	background: rgba(79, 76, 79, 0.35) !important;
+	backdrop-filter: blur(8px) !important;
+}
+
+/*手机模式侧边栏*/
+#sidebar #sidebar-menus.open{
+	background:rgba(246, 239, 246, 0.75) !important;
+	backdrop-filter: blur(3px);
+	border-radius: 6px 0 0 6px;
+}
+[data-theme=dark]
+#sidebar #sidebar-menus.open{
+	background:rgba(252, 224, 252, 0.11) !important;
+	backdrop-filter: blur(3px);
+	border-radius: 6px 0 0 6px;
+}
+/*侧边控制按钮*/
+#rightside > #rightside-config-show > #rightside_config,
+#rightside > #rightside-config-show > #to_comment,
+#rightside > #rightside-config-show > #go-up, 
+#rightside > #rightside-config-show > #go-down,
+#rightside > #rightside-config-hide > #readmode,
+#rightside > #rightside-config-hide > #translateLink,
+#rightside > #rightside-config-hide > #hide-aside-btn {
+	background: opacity(0.3);
+	backdrop-filter: blur(3px);
+}
+[data-theme=dark]
+#rightside > #rightside-config-show > #rightside_config,
+#rightside > #rightside-config-show > #to_comment,
+#rightside > #rightside-config-show > #go-up,
+#rightside > #rightside-config-show > #go-down,
+#rightside > #rightside-config-hide > #readmode,
+#rightside > #rightside-config-hide > #translateLink,
+#rightside > #rightside-config-hide > #hide-aside-btn {
+	background: opacity(0.3);
+	backdrop-filter: blur(3px);
+}
+/*搜索*/
+#local-search .search-dialog,
+#local-search .search-dialog .local-search-box input{
+	background:rgba(246, 239, 246, 0.75) !important;
+	backdrop-filter: blur(3px);
+	border-radius: 6px 6px;
+}
+[data-theme=dark]
+#local-search .search-dialog,
+#local-search .search-dialog .local-search-box input{
+	background:rgba(252, 224, 252, 0.2) !important;
+	backdrop-filter: blur(3px);
+	border-radius: 6px 6px;
+}
+/*******************************************************/
+
+.loading-img {
+  background: url(https://s2.loli.net/2024/03/15/MIATbBgvRqK58xf.jpg) no-repeat center center;
+  background-size: cover;
+}
