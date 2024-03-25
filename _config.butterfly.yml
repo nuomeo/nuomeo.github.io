@@ -35,6 +35,7 @@ code_word_wrap: false
 social:
   fab fa-github: https://github.com/nuomeo || Github || '#24292e'
   fas fa-envelope: mailto:ortiycx@gmail.com || Email || '#4a7dbe'
+  fas fa-brands fa-bilibili: https://space.bilibili.com/36206711 || bilibili || '#EFC3CA'
 
 # Image (圖片設置)
 # --------------------------------------
