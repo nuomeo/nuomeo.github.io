@@ -1,0 +1,4 @@
+# config/_default/config.toml
+
+baseURL = "https://nuomeo.github.io/"
+languageCode = "en"
