@@ -5,7 +5,7 @@ draft = false
 
 +++
 
-## [牛客周赛 Round 44](https://ac.nowcoder.com/acm/contest/82526)
+比赛链接：[牛客周赛 Round 44](https://ac.nowcoder.com/acm/contest/82526)
 
 ### [A 题 唐龙守则](https://ac.nowcoder.com/acm/contest/82526/A)
 
