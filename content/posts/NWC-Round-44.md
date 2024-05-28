@@ -1,9 +1,11 @@
 +++
-title = '[牛客周赛 Round 44](https://ac.nowcoder.com/acm/contest/82526)'
+title = 'NWC Round 44'
 date = 2024-05-28T20:05:00+08:00
 draft = false
 
 +++
+
+## [牛客周赛 Round 44](https://ac.nowcoder.com/acm/contest/82526)
 
 ### [A 题 唐龙守则](https://ac.nowcoder.com/acm/contest/82526/A)
 
