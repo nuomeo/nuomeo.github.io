@@ -12,7 +12,7 @@ autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = false
 
-# mainSections = ["section1", "section2"]
+mainSections = ["blog"]
 # robots = ""
 
 disableImageOptimization = false
@@ -38,7 +38,7 @@ disableTextInHeader = false
 [homepage]
   layout = "hero" # valid options: page, profile, hero, card, background, custom
   homepageImage = "img/background.jpg" # used in: hero, and card
-  showRecent = false
+  showRecent = true
   showRecentItems = 5
   showMoreLink = false
   showMoreLinkDest = "/posts"
@@ -51,7 +51,7 @@ disableTextInHeader = false
   showViews = false
   showLikes = false
   showDateOnlyInArticle = false
-  showDateUpdated = false
+  showDateUpdated = true
   showAuthor = true
   # showAuthorBottom = false
   showHero = false
@@ -78,18 +78,18 @@ disableTextInHeader = false
   showZenMode = false
 
 [list]
-  showHero = false
-  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
-  showBreadcrumbs = false
+  showBreadcrumbs = true
   showSummary = false
   showViews = false
   showLikes = false
   showTableOfContents = false
-  showCards = false
+  showCards = true
   groupByYear = true
-  cardView = false
+  cardView = true
   cardViewScreenWidth = false
   constrainItemsWidth = false
 

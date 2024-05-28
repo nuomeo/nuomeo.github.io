@@ -169,9 +169,7 @@ int main() {
 
 ### [F 题 小红的基环树删边](https://ac.nowcoder.com/acm/contest/82526/F)
 
-看到的简洁判断。[题解 | #小红的基环树删边#_牛客博客 (nowcoder.net)](https://blog.nowcoder.net/n/66152910d903429dac8b6d878b263d9e)
-
-注意到基环树上的环产生两个分支路线，因此 11 到 𝑛*n* 的路径最多只有 22 条，暴搜枚举即可。
+看到的简洁题解。[题解 | #小红的基环树删边#_牛客博客 (nowcoder.net)](https://blog.nowcoder.net/n/66152910d903429dac8b6d878b263d9e)
 
 ```C++
 #include <iostream>
