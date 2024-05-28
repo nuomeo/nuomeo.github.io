@@ -18,7 +18,7 @@ title = "Blowfish"
   image = "img/avatar.jpg"
   headline = "I'm only human"
   bio = "A little bit about you"
-#   links = [
+  links = [
     { email = "mailto:ortiycx@gmail.com" },
     { bilibili = "https://space.bilibili.com/36206711" },
 #     { link = "https://link-to-some-website.com/" },
@@ -67,4 +67,4 @@ title = "Blowfish"
 #     { youtube = "https://youtube.com/username" },
 #     { ko-fi = "https://ko-fi.com/username" },
 #     { codeberg = "https://codeberg.org/username"},
-#   ]
+  ]
