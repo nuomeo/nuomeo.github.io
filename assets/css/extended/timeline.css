@@ -1,0 +1,22 @@
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-date {
+    font-weight: bold;
+}
+
+.timeline-title {
+    margin: 0;
+}
+
+.timeline-content {
+    margin: 10px 0 0;
+}
