@@ -1,6 +1,12 @@
-baseURL = "https://nuomeo.github.io/"
+baseURL = "https://nuomeo.github.io"
 languageCode = "en"
 title = "Nuomeo's Blog"
 theme = "hugo-theme-stack"
 author = "nuomeo"
+[params]
+  subtitle = 'go ahead'
+  [params.contact]
+    email = 'thalumi@163.com'
 
+[pagination]
+pagerSize = 10

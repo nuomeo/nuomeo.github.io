@@ -1,3 +1,12 @@
++++
+date = 2024-02-02T04:14:54-08:00
+draft = false
+title = 'Database-MySQL-Index'
+weight = 10
+[params]
+  author = 'nuomeo'
++++
+
 ### 底层数据结构
 
 在 MySQL 索引的底层数据结构为 B+ 树.
