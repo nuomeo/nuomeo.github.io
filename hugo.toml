@@ -1,0 +1,4 @@
+baseURL = 'https://nuomeo.github.io/'
+languageCode = 'en-us'
+title = 'Nuomeo's Blog'
+theme = 'hugo-theme-stack'
