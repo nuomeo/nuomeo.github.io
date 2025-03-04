@@ -1,2 +1,5 @@
 /public/
 /archetypes/
+.hugo_build.lock
+/assets/
+/resources/
