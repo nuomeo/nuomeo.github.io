@@ -1,15 +1,13 @@
 +++
 date = 2024-02-02T04:14:54-08:00
 draft = false
-title = 'Database-MySQL-Index'
+title = '数据库 - MySQL - 索引'
 weight = 10
-[params]
-  author = 'nuomeo'
 +++
 
 ### 底层数据结构
 
-在 MySQL 索引的底层数据结构为 B+ 树.
+在 MySQL 中 InnoDb 引擎的索引底层数据结构为 B+ 树.
 
 ### 为什么是 B+ 树 ?
 
