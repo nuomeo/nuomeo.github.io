@@ -1,0 +1,123 @@
+:root {
+  --body-background: #ebebeb;
+  --accent-color: #1b365d;
+  --accent-color-darker: #202a44;
+  --accent-color-text: #fff;
+  --body-text-color: #202a44;
+}
+
+:root {
+  --card-background: #fff;
+  --card-background-selected: #ebebeb;
+  --card-text-color-main: #202a44;
+  --card-text-color-secondary: #53565a;
+  --card-text-color-tertiary: #888b8d;
+}
+
+.widget--toc {
+  display: flex;
+  width: 85%;
+  #TableOfContents {
+    max-height: 65vh;
+    width: 100%;
+    ol,
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      margin: 7px 7px;
+
+      & > ol,
+      & > ul {
+        margin-top: 10px;
+        padding-left: 0px;
+        margin-bottom: -5px;
+
+        & > li:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .article-list--compact.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: none;
+    box-shadow: none;
+
+    article {
+      background: var(--card-background);
+      border: none;
+      box-shadow: var(--shadow-l2);
+      margin-bottom: 8px;
+      border-radius: 10px;
+      &:nth-child(odd) {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  .left-sidebar {
+    order: -3;
+    max-width: var(--left-sidebar-max-width);
+  }
+
+  .right-sidebar {
+    order: -1;
+    max-width: var(--right-sidebar-max-width);
+
+    /// Display right sidebar when min-width: lg
+    @include respond(lg) {
+      display: flex;
+    }
+  }
+
+  &.extended {
+    @include respond(md) {
+      max-width: 1024px;
+      --left-sidebar-max-width: 25%;
+      --right-sidebar-max-width: 22% !important;
+    }
+
+    @include respond(lg) {
+      max-width: 1280px;
+      --left-sidebar-max-width: 20%;
+      --right-sidebar-max-width: 30%;
+    }
+
+    @include respond(xl) {
+      max-width: 1453px; //1536px;
+      --left-sidebar-max-width: 15%;
+      --right-sidebar-max-width: 25%;
+    }
+  }
+
+  &.compact {
+    @include respond(md) {
+      --left-sidebar-max-width: 15%;
+      --right-sidebar-max-width: 25%;
+      max-width: 1024px;
+    }
+
+    @include respond(lg) {
+      max-width: 1280px;
+      --left-sidebar-max-width: 15%;
+      --right-sidebar-max-width: 25%;
+    }
+
+    @include respond(xl) {
+      max-width: 1536px;
+      --left-sidebar-max-width: 15%;
+      --right-sidebar-max-width: 25%;
+    }
+  }
+}

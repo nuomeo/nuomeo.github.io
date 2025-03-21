@@ -1,19 +1,16 @@
 [[main]]
   identifier = "home"
-  name = "Home"
+  name = "主页"
   url = "/"
   weight = 1
-[[main]]
-  identifier = "archives"
-  name = "Archives"
-  url = "/archives/"
-  weight = 10
+  [main.params]
+    icon = "home"
 
 [[social]]
   identifier = "github"
   name = "GitHub"
   url = "https://github.com/nuomeo"
-
+  
 [social.params]
   icon = "brand-github"
 
@@ -21,3 +18,13 @@
   identifier = "bilibili"
   name = "Bilibili"
   url = "https://bilibili.com"
+  
+[social.params]
+  icon = "brand-bilibili"
+
+[[social]]
+  identifier = "email"
+  name = "邮箱"
+  url = "mailto:thalumi@163.com"
+[social.params]
+  icon = "mail"
