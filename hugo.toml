@@ -1,12 +1,12 @@
 baseURL = "https://nuomeo.github.io"
 languageCode = "en"
-title = "Nuomeo's Blog"
+title = "镜花水月"
 theme = "hugo-theme-stack"
 author = "nuomeo"
 [params]
-  subtitle = 'go ahead'
+  subtitle = 'Keep Doing'
   [params.contact]
     email = 'thalumi@163.com'
 
 [pagination]
-pagerSize = 10
+pagerSize = 15
